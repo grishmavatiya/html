@@ -1,0 +1,33 @@
+#navbar-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarNav {
+    font-size: 14px;
+}
+
+#page-1 {
+    background: url("/bootstrap-image/index-8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+    width: 100% !important;
+    display: flex;
+}
+
+#page-1-img {
+    margin: 85px 0px 0px 150px;
+}
+
+#page-1-intro {
+    width: 43% !important;
+    padding: 100px 43px;
+}
+#page-1-intro h1{ 
+    font-size: 46px;
+    letter-spacing: 1px;   
+}
+#page-1-intro p{
+    font-size: 16px;
+}

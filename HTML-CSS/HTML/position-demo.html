@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative-absolute demo</title>
+
+    <style>
+        body{
+            background-image: url('/images/pos-img.jpg');
+            background-repeat: no-repeat;
+            background-position: unset;
+            background-size: cover;
+            position: relative;
+        }
+        .absolute-tr{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 300px;
+            height: 200px;
+            border: 3px solid black;
+            text-align: center;
+            background-color: rgba(240, 248, 255, 0.498);
+        }
+        .absolute-tl{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 200px;
+            border: 3px solid black;
+            text-align: center;
+            background-color: rgba(240, 248, 255, 0.498);
+        }
+        .absolute-bl{
+            position: absolute;
+            bottom: -730px;
+            left: 0px;
+            width: 300px;
+            height: 200px;
+            border: 3px solid black;
+            text-align: center;
+            background-color: rgba(240, 248, 255, 0.498);
+        }
+        .absolute-br{
+            position: absolute;
+            bottom: -730px;
+            right: 0px;
+            width: 300px;
+            height: 200px;
+            border: 3px solid black;
+            text-align: center;
+            background-color: rgba(240, 248, 255, 0.498);
+        }
+        .absolute-center{
+            position: absolute;
+            top: 250px;
+            right: 460px;
+            width: 300px;
+            height: 200px;
+            border: 3px solid black;
+            text-align: center;
+            background-color: rgba(240, 248, 255, 0.498);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="absolute-tr">
+        <h1>Hello World</h1>
+    </div>
+
+    <div class="absolute-tl">
+        <h1>Hello World</h1>
+    </div>
+
+    <div class="absolute-bl">
+        <h1>Hello World</h1>
+    </div>
+
+    <div class="absolute-br">
+        <h1>Hello World</h1>
+    </div>
+
+    <div class="absolute-center">
+        <h1>Hello World</h1>
+    </div>
+</body>
+</html>

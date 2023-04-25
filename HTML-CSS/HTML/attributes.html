@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes-demo</title>
+
+    <style>
+        a[target]{
+            background-color: lightsalmon;
+        }
+        [title~=flower] {
+            border: 3px solid lightseagreen;
+        }
+        [class|=top]{
+            background-color: lightcoral;
+        }
+        [class$="test"] {
+        background: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+
+        <a href="http://www.disney.com" target="_blank">disney.com</a>
+
+        <img src="/images/attribute1.jpg" width="300" height="200" title="flower">
+        <img src="/images/attribute2.gif" width="300" height="200" title="flower">
+
+        <p class="top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo magnam atque fugit quis facilis aspernatur deleniti eius maxime qui, autem odit error, amet ea tempore vero itaque enim cum, numquam voluptatem illum adipisci aliquam esse. Fuga quisquam modi iusto corrupti architecto facilis tenetur sint, nihil dolores iure impedit itaque!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo magnam atque fugit quis facilis aspernatur deleniti eius maxime qui, autem odit error, amet ea tempore vero itaque enim cum, numquam voluptatem illum adipisci aliquam esse. Fuga quisquam modi iusto corrupti architecto facilis tenetur sint, nihil dolores iure impedit itaque!</p>
+
+        <p class="top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo magnam atque fugit quis facilis aspernatur deleniti eius maxime qui, autem odit error, amet ea tempore vero itaque enim cum, numquam voluptatem illum adipisci aliquam esse. Fuga quisquam modi iusto corrupti architecto facilis tenetur sint, nihil dolores iure impedit itaque!</p>
+
+        <p class="mytest">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo magnam atque fugit quis facilis aspernatur deleniti eius maxime qui, autem odit error, amet ea tempore vero itaque enim cum, numquam voluptatem illum adipisci aliquam esse. Fuga quisquam modi iusto corrupti architecto facilis tenetur sint, nihil dolores iure impedit itaque!</p>
+
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo magnam atque fugit quis facilis aspernatur deleniti eius maxime qui, autem odit error, amet ea tempore vero itaque enim cum, numquam voluptatem illum adipisci aliquam esse. Fuga quisquam modi iusto corrupti architecto facilis tenetur sint, nihil dolores iure impedit itaque!</p>
+
+        <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo magnam atque fugit quis facilis aspernatur deleniti eius maxime qui, autem odit error, amet ea tempore vero itaque enim cum, numquam voluptatem illum adipisci aliquam esse. Fuga quisquam modi iusto corrupti architecto facilis tenetur sint, nihil dolores iure impedit itaque!</p>
+    </div>
+</body>
+</html>

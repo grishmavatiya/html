@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+
+    <style>
+        body{
+            background-color: rgb(253, 238, 221);
+        }
+        /* INTRODUCTION AND HEADING */
+        .introduction p{
+            font-size: 18px;
+            margin: 30px 10px;
+        }
+        .heading{
+            position: sticky;
+            top: 4px;
+            text-align: center;
+            background-color: rgb(36, 28, 8);
+            color: rgb(253, 234, 205);
+            outline: 3px solid black;
+            outline-offset: 3px;
+            border-radius: 2px;
+            z-index: 1;
+            padding: 10px;
+            font-size: 10px;
+        }
+        .sun{
+            width: 100%;
+        }
+        /* SUN IMAGE */
+        .img-s{
+            width: 30%;
+            position: relative;
+            float: right;   
+        }
+        .img-s p{
+            position: absolute;
+            top: 170px;
+            right: 60px;
+            font-size: 25px;
+        }
+        .sun-img{
+            float: right;
+        }
+        /* SUN PARAGRAPH */
+        .sun-para {
+            position: absolute;
+            font-size: 18px;
+            margin-right: 420px;
+            padding: 45px 10px;
+            line-height: 35px;
+            width: 70%;
+        }
+        .sun-para h2{
+            background-color: rgb(36, 28, 8);
+            color: rgb(244, 209, 155);
+            margin: 0px 150px;
+            padding: 5px;
+            text-align: center;
+        }
+        .mercury{
+            clear: both;
+        }
+         /* MERCURY IMAGE */
+         .img-m{
+            width: 30%;
+            position: relative;
+            float: left;   
+        }
+        .img-m p{
+            position: absolute;
+            top: 170px;
+            left: 25px;
+            font-size: 22px;
+            color:white;
+        }
+        .mercury-img{
+            float: left;
+        }
+        /* MERCURY PARAGRAPH */
+        .mercury-para {
+            position: absolute;
+            top: 680px;
+            right: 0px;
+            font-size: 18px;
+            padding: 0px 10px;
+            line-height: 35px;
+            width: 70%;
+        }
+        .mercury-para h2{
+            background-color: rgb(36, 28, 8);
+            color: rgb(244, 209, 155);
+            margin: 0px 150px;
+            padding: 5px;
+            text-align: center;
+        }
+        .venus{
+            width: 100%;
+            clear: both;
+        }
+        /* VENUS IMAGE */
+        .img-v{
+            width: 30%;
+            position: relative;
+            float: right;   
+            right: -30px;
+        }
+        .img-v p{
+            position: absolute;
+            top: 210px;
+            right: 70px;
+            font-size: 23px;
+        }
+        .venus-img{
+            float: right;
+        }
+        /* VENUS PARAGRAPH */
+        .venus-para {
+            position: absolute;
+            font-size: 18px;
+            margin-right: 420px;
+            padding: 80px 10px;
+            line-height: 35px;
+            width: 70%;
+        }
+        .venus-para h2{
+            background-color: rgb(36, 28, 8);
+            color: rgb(244, 209, 155);
+            margin: 0px 150px;
+            padding: 5px;
+            text-align: center;
+        }
+        .earth{
+            clear: both;
+        }
+         /* EARTH IMAGE */
+         .img-e{
+            width: 30%;
+            position: relative;
+            float: left;   
+        }
+        .img-e p{
+            position: absolute;
+            top: 175px;
+            left: 55px;
+            font-size: 22px;
+            color:rgb(255, 255, 255);
+        }
+        .earth-img{
+            float: left;
+        }
+        /* EARTH PARAGRAPH */
+        .earth-para {
+            position: absolute;
+            top: 1570px;
+            right: 0px;
+            font-size: 18px;
+            padding: 0px 5px;
+            line-height: 35px;
+            width: 70%;
+        }
+        .earth-para h2{
+            background-color: rgb(36, 28, 8);
+            color: rgb(244, 209, 155);
+            margin: 0px 150px;
+            padding: 5px;
+            text-align: center;
+        }
+        .mars{
+            width: 100%;
+            clear: both;
+        }
+        /* MARS IMAGE */
+        .img-ma{
+            width: 30%;
+            position: relative;
+            float: right;  
+            right: 20px; 
+        }
+        .img-ma p{
+            position: absolute;
+            top: 150px;
+            right: 60px;
+            font-size: 23px;
+            color: white;
+        }
+        .mars-img{
+            float: right;
+        }
+        /* MARS PARAGRAPH */
+        .mars-para {
+            position: absolute;
+            font-size: 18px;
+            margin-right: 420px;
+            padding: 50px 10px;
+            line-height: 35px;
+            width: 70%;
+        }
+        .mars-para h2{
+            background-color: rgb(36, 28, 8);
+            color: rgb(244, 209, 155);
+            margin: 0px 150px;
+            padding: 5px;
+            text-align: center;
+        }
+        .jupiter{
+            clear: both;
+        }
+         /* JUPITER IMAGE */
+         .img-j{
+            width: 30%;
+            position: relative;
+            float: left;  
+            left: 20px;
+            padding: 40px 0px;
+        }
+        .img-j p{
+            position: absolute;
+            top: 195px;
+            left: 30px;
+            font-size: 22px;
+            color:black;
+        }
+        .jupiter-img{
+            float: left;
+        }
+        /* JUPITER PARAGRAPH */
+        .jupiter-para {
+            position: absolute;
+            top: 2430px;
+            right: 0px;
+            font-size: 18px;
+            padding: 0px 5px;
+            line-height: 35px;
+            width: 70%;
+        }
+        .jupiter-para h2{
+            background-color: rgb(36, 28, 8);
+            color: rgb(244, 209, 155);
+            margin: 0px 150px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="introduction">
+        <p>The <b>Solar System</b> is the gravitationally bound system of the Sun and the objects that orbit it. It formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority (99.86%) of the system's mass is in the Sun, with most of the remaining mass contained in the planet Jupiter. The four inner system planets—Mercury, Venus, Earth and Mars—are terrestrial planets, being composed primarily of rock and metal. The four giant planets of the outer system are substantially larger and more massive than the terrestrials. The two largest, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the next two, Uranus and Neptune, are ice giants, being composed mostly of volatile substances with relatively high melting points compared with hydrogen and helium, such as water, ammonia, and methane. All eight planets have nearly circular orbits that lie near the plane of Earth's orbit, called the ecliptic.</p>
+    </div>
+    
+    <div class="heading"> 
+        <h1>INFORMATION OF PLANETS AND SUN </h1>
+    </div>
+
+    <div class="sun">
+        <div class="img-s">
+            <p><b>STAR OF SOLAR SYSTEM</b></p>
+
+            <img src="/images/sun.png" width="430" height="430" class="sun-img">
+        </div>
+
+        <div class="sun-para">
+
+            <h2>1. SUN</h2>
+
+            <p>The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core. The Sun radiates this energy mainly as light, ultraviolet, and infrared radiation, and is the most important source of energy for life on Earth.The Sun's radius is about 695,000 kilometers (432,000 miles), or 109 times that of Earth. Its mass is about 330,000 times that of Earth, comprising about 99.86% of the total mass of the Solar System.Roughly three-quarters of the Sun's mass consists of hydrogen (~73%); the rest is mostly helium (~25%), with much smaller quantities of heavier elements, including oxygen, carbon, neon, and iron.The Sun has been called by many names. The Latin word for Sun is “sol,” which is the main adjective for all things Sun-related: solar.</p>
+        </div>
+    </div>
+
+    <div class="mercury">
+        <div class="img-m">
+            <p><b>SMALLEST PLANET IN SYSTEM</b></p>
+
+            <img src="/images/mercury.png" width="400" height="400" class="mercury-img">
+        </div>
+
+        <div class="mercury-para">
+
+            <h2>2.Planet- MERCURY</h2>
+
+            <p>Mercury is the closest planet to the Sun but, perhaps surprisingly, it does not have the highest temperatures. It is the second densest planet of the Solar System, but also the smallest planet. The structure of Mercury makes it the most similar planet to Earth.Since Mercury can be seen without the need of a telescope, many ancient civilizations saw the planet, and as such it is impossible to determine who discovered it first. However, it was first observed with the help of a telescope in early 17th century, by Galileo Galilei.Despite being the smallest terrestrial planet from the Solar System, and in fact the smallest of all the planets, it is the second densest planet in the Solar System, with a density of 5.43 g/cm³.</p>
+        </div>
+    </div>
+
+    <div class="venus">
+        <div class="img-v">
+            <p><b>HOTTEST PLANET OF SYSTEM</b></p>
+
+            <img src="/images/venus.png" width="490" height="490" class="venus-img">
+        </div>
+
+        <div class="venus-para">
+
+            <h2>3.Planet- VENUS</h2>
+
+            <p>Venus is the second planet from the Sun. It is sometimes called Earth's "sister" or "twin" planet as it is almost as large and has a similar composition. As an interior planet to Earth, Venus (like Mercury) appears in Earth's sky never far from the Sun, either as morning star or evening star. Aside from the Sun and Moon, Venus is the brightest natural object in Earth's sky, capable of casting visible shadows on Earth at dark conditions and being visible to the naked eye in broad daylight.Venus is the second largest terrestrial object of the Solar System. It has a surface gravity slightly lower than on Earth and has a very weak induced magnetosphere. The atmosphere of Venus, mainly consists of carbon dioxide, and is the densest and hottest of the four terrestrial planets at the surface.</p>
+        </div>
+    </div>
+
+    <div class="earth">
+        <div class="img-e">
+            <p><b>LIVING PLANET IN SYSTEM</b></p>
+
+            <img src="/images/earth.png" width="420" height="420" class="earth-img">
+        </div>
+
+        <div class="earth-para">
+
+            <h2>4.Planet- EARTH</h2>
+
+            <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water. About 71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers. The remaining 29% of Earth's surface is land, consisting of continents and islands. Earth's surface layer is formed of several slowly moving tectonic plates, interacting to produce mountain ranges, volcanoes, and earthquakes. Earth's liquid outer core generates the magnetic field that shapes the magnetosphere of the Earth, deflecting destructive solar winds.The atmosphere of the Earth consists mostly of nitrogen and oxygen.</p>
+        </div>
+    </div>
+
+    <div class="mars">
+        <div class="img-ma">
+            <p><b>ROMAN GOD OF WARS</b></p>
+
+            <img src="/images/mars.png" width="380" height="380" class="mars-img">
+        </div>
+
+        <div class="mars-para">
+
+            <h2>5.Planet- MARS</h2>
+
+            <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In the English language, Mars is named for the Roman god of war. Mars is a terrestrial planet with a thin atmosphere (less than 1% that of Earth's), and has a crust primarily composed of elements similar to Earth's crust, as well as a core made of iron and nickel. Mars has surface features such as impact craters, valleys, dunes, and polar ice caps. It has two small and irregularly shaped moons: Phobos and Deimos.Some of the most notable surface features on Mars include Olympus Mons, the largest volcano and highest known mountain on any planet in the Solar System, and Valles Marineris, one of the largest canyons in the Solar System. </p>
+        </div>
+    </div>
+
+    <div class="jupiter">
+        <div class="img-j">
+            <p><b>LARGEST PLANET IN SYSTEM</b></p>
+
+            <img src="/images/jupiter.png" width="380" height="380" class="jupiter-img">
+        </div>
+
+        <div class="jupiter-para">
+
+            <h2>6.Planet- JUPITER</h2>
+
+            <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times. It was named after the Roman god Jupiter, the king of the gods.Jupiter is primarily composed of hydrogen, but helium constitutes one-quarter of its mass and one-tenth of its volume. It probably has a rocky core of heavier elements, but, like the other giant planets in the Solar System, it lacks a well-defined solid surface.</p>
+        </div>
+    </div>
+
+    <div class="saturn">
+        <div class="img-sa">
+            <p><b>ROMAN GOD OF WARS</b></p>
+
+            <img src="/images/mars.png" width="380" height="380" class="saturn-img">
+        </div>
+
+        <div class="saturn-para">
+
+            <h2>7.Planet- SATURN</h2>
+
+            <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In the English language, Mars is named for the Roman god of war. Mars is a terrestrial planet with a thin atmosphere (less than 1% that of Earth's), and has a crust primarily composed of elements similar to Earth's crust, as well as a core made of iron and nickel. Mars has surface features such as impact craters, valleys, dunes, and polar ice caps. It has two small and irregularly shaped moons: Phobos and Deimos.Some of the most notable surface features on Mars include Olympus Mons, the largest volcano and highest known mountain on any planet in the Solar System, and Valles Marineris, one of the largest canyons in the Solar System. </p>
+        </div>
+    </div>
+</body>
+</html>

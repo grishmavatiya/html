@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo-opacity</title>
+
+    <style>
+        .heading::after{
+            content: url('/images/smiley.gif');
+        }
+        .psuedo::first-line{
+            color: blueviolet;
+            font-variant: small-caps;
+        }
+        .psuedo::first-letter{
+            color: brown;
+            font-variant: small-caps;
+        }
+        ::marker { 
+            color: red;
+            font-size: 23px;
+        }
+        .opacity:hover{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="heading">Psuedo elements </h1>
+
+        <p class="psuedo">lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum in quos animi obcaecati magnam voluptatum omnis dolorem nam error adipisci, officiis iure molestias voluptatibus odit nihil amet nesciunt, eligendi atque?Lorem ipsum dolor sit amet consectetur, adipisicing elit. In vitae voluptatibus odio nesciunt sequi veniam facere molestias, est, blanditiis nulla perferendis ducimus omnis deserunt at consequatur magnam a? Odit, dolor.</p>
+    </div>
+
+    <div>
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+        </ul>
+    </div>
+
+    <div>
+        <img src="/images/opacity1.jpg" width="370" height="300" class="opacity">
+        <img src="/images/opacity2.jpg" width="370" height="300" class="opacity">
+        <img src="/images/opacity3.jpg" width="370" height="300" class="opacity">
+    </div>
+</body>
+</html>

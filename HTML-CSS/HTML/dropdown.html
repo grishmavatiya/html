@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .list {
+            list-style-type: none;
+            display: flex;
+            font-size: 20px;
+            background-color: black;
+        }
+        .list-details {
+            padding: 20px;
+        }
+        .list-details:hover{
+            background-color: rgb(185, 185, 185) ;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .icon {
+            padding: 20px;
+        }
+        .icon-edit{
+            display: flex;
+        }
+        .icon:hover{
+            background-color: rgb(185, 185, 185);
+        }
+        .drop{
+            position: relative;
+        }
+        .dropdown{
+            position: absolute;
+            display: none;
+            top: 65px;
+        }
+        .dropdown a{
+            padding: 15px 50px;
+            display: block;
+        }
+        .drop:hover .dropdown{
+            display: block;
+            background-color: gray;
+        }
+        .search-bar {
+            display: flex;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(239, 238, 238);
+            margin-left: 810px;
+            margin-top: 7.6px;
+        }
+        .search-bar input {
+            border: none;
+            width: 100%;
+            padding: 0 5px;
+            background-color: transparent;
+            border-color: transparent;
+            font-size: 15px;
+            align-content: center;
+            display: grid;
+            line-height: 27.1px;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        .search-icon {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            padding: 0 5px 0 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="list">
+            <li class="list-details">
+
+                <a href="#home">Home</a>
+            </li>
+
+            <li class="list-details">
+                <a href="#news">News</a>
+            </li>
+
+            <li class="list-details drop">
+                <a href="#contact">Contact</a>
+                <div class="dropdown">
+                    <a href="">Introduction</a>
+                    <a href="">Benefits</a>
+                    <a href="">Defaults</a>
+                    <a href="">Listing</a>
+                </div>
+            </li>
+
+            <li class="list-details">
+                <a href="#about">About</a>
+            </li>
+
+            <div class="icon-edit">
+                <li>
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" placeholder="Search" />
+                    </div>
+                </li>
+
+                <li><a><i class="fa-solid fa-gear icon"></i></a></li>
+            </div>
+        </ul>
+
+    </div>
+</body>
+
+</html>

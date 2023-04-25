@@ -1,0 +1,164 @@
+body {
+    margin: 10px;
+    border: 3px solid rgb(198, 93, 198);
+    height: 800px;
+    background-color: rgb(255, 237, 241);
+}
+
+/* TRANSITION-TRANSFORM */
+h1 {
+    margin: 30px 450px;
+    text-align: center;
+    background-color: lightsteelblue;
+    box-shadow: 10px 10px 5px rgb(235, 169, 191);
+    border-radius: 5px;
+}
+
+.content-1 {
+    width: 98.5%;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+}
+
+.rabbit-width {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.rabbit {
+    position: absolute;
+    width: 250px;
+    top: 10%;
+    left: 10%;
+    transition: width 2s, left 2s, top 2s;
+}
+
+.rabbit:hover {
+    width: 300px;
+    left: 7%;
+    top: 5%;
+}
+
+.rabbit1 {
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    left: 10%;
+    transition: width 2s, left 2s, top 2s;
+}
+
+.rabbit1:hover {
+    width: 250px;
+    left: 10%;
+    top: 10%;
+}
+
+.rabbit2 {
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    left: 10%;
+    transition: left 2s;
+}
+
+.rabbit2:hover {
+    left: -10%;
+}
+
+.rabbit3 {
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    right: 10%;
+    transition: right 2s;
+}
+
+.rabbit3:hover {
+    right: -7%;
+}
+
+.content-2 {
+    width: 98.5%;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+}
+
+.rabbit4 {
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    right: 10%;
+    transition: top 2s;
+}
+
+.rabbit4:hover {
+    top: -10%;
+}
+
+.rabbit5 {
+    position: absolute;
+    width: 300px;
+    bottom: 10%;
+    transition: bottom 2s;
+}
+
+.rabbit5:hover {
+    bottom: -5%;
+}
+
+.rabbit6 {
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    right: 10%;
+    transition: top 2s;
+}
+
+.rabbit6:hover {
+    border: 3px solid rgb(198, 93, 198);
+}
+
+.rabbit7 {
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    right: 10%;
+    transition: top 2s;
+}
+
+.rabbit7:hover {
+    background-color: rgb(198, 93, 198);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(198, 93, 198);
+}
+
+.rabbit-width:hover .overlay {
+    opacity: 1;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}

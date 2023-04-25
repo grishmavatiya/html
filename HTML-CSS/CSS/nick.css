@@ -1,0 +1,158 @@
+body {
+    background-color: #ebebd6;
+    font-family: Russo One, Helvetica, Arial;
+}
+
+.main {
+    width: 700px;
+    margin: auto;
+}
+
+.main h1 {
+    font-family: Russo One, Helvetica, Arial;
+}
+
+p,
+li {
+    font-family: Helvetica, Arial;
+    font-size: 18px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.nav-dropdown {
+    display: flex;
+    width: 175px;
+    color: white;
+    background-color: #aa0000;
+    padding: 0px 18px 0px 45px;
+    text-decoration: none;
+    font-size: 23px;
+    border: none;
+}
+
+.nav-dropdown:hover {
+    background-color: red;
+}
+
+ul.nav a:link,
+ul.nav a:visited {
+    display: flex;
+    width: 110px;
+    color: white;
+    background-color: #aa0000;
+    padding: 0px 16px 0px 45px;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+ul.nav a:hover,
+ul.nav a:active {
+    background-color: red;
+}
+
+img {
+    margin: 2px 10px 10px 0px;
+    float: left;
+}
+
+h2 {
+    clear: both;
+}
+
+p.paragraph {
+    margin-top: 20px;
+}
+
+.order a:hover {
+    color: red;
+}
+
+.footer p {
+    color: red;
+}
+
+.footer a:hover {
+    color: red;
+}
+
+a:link,
+a:visited {
+    color: #a00;
+    text-decoration: none;
+}
+.nav-content {
+    display: flex;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .main h1 {
+        font-size: 40px;
+    }
+
+    .nav-dropdown {
+        display: flex;
+        width: 690px;
+        color: white;
+        background-color: #aa0000;
+        padding: 5px 30px 7px 45px;
+        text-decoration: none;
+        font-size: 25px;
+        border: none;
+        margin: 0px 15px;
+        justify-content: center;
+    }
+
+    .nav {
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+    }
+
+    .nav-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .nav a:hover {
+        background-color: #f1f1f1
+    }
+
+    .nav:hover .nav-content {
+        display: block;
+    }
+
+    .nav:hover .nav-dropdown{
+        background-color: red;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
